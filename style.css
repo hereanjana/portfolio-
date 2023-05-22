@@ -1,0 +1,302 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background-color: ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 24px 20px;
+}
+
+.nav-links ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background: red;
+    display: block ;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.parent {
+    width: 100%;
+    display: flex;
+}
+.left {
+    width: 50%;
+    margin: auto 300px;
+}
+    
+.right {
+    width: 50%;
+}
+    
+#imgg {
+    width: 750px;
+    height: 750px;
+    margin-right:100px ;
+    object-fit: contain;
+}
+    
+span {
+    color: #D61355;
+}
+    
+button {
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;       
+    border-style: none;
+    background-color: #F48484;
+    font-weight: 600;
+}
+    
+button:hover {
+    background-color: #D61355;
+    color: white;
+    }
+    
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+    
+.dark-mode span {
+    color: blanchedalmond;
+}
+    
+.dark-mode button {
+    background-color: blanchedalmond;
+    color: #D61355;
+    }
+    
+.dark-mode button:hover {
+    background-color: aqua;
+    color: brown;
+}
+
+/*...about section...*/
+.aboutme {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+
+.aboutme h1 {
+    font-size: 60px;
+    
+}
+
+.aboutme p {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 15px;
+    color: #D61355;
+
+}
+
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.about-col {
+    flex: 50px;
+    padding: 25px;
+}
+
+.about-col img {
+    width: 500px;
+}
+
+.about-col p {
+    text-align: justify;
+    font-size: 25px;
+    color:black;
+    line-height: 1.5;
+}
+
+/*--skills---*/
+.skills h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container-skill {
+    box-sizing: border-box;
+    width: 40%;
+    background-color:grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 20px;
+    color: white;
+}
+
+.skills p {
+    margin: 0.1%;
+}
+
+.html {
+    width: 90%;
+    background-color: rgb(65, 65, 143);
+}
+
+.css {
+    width: 80%;
+    background-color: rgb(65, 65, 143);
+}
+
+.python {
+    width: 65%;
+    background-color: rgb(65, 65, 143);
+}
+
+.js {
+    width: 20%;
+    background-color: rgb(65, 65, 143);
+}
+
+.skill-box p{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+
+/*---portfoloi--*/
+.portfolio {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 70px;
+}
+
+.portfolio h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 15px;
+    margin: 10px 0;
+}
+
+.portfolio p {
+    margin-top: 5px;
+}
+
+.p-col {
+    flex-basis: 32px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.p img {
+    width: 340px;
+
+    display: block;
+}
+
+.layer {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background-color: rgba(255, 0, 0, 0.692);
+}
+
+.layer h3 {
+    text-align: center;
+    font-weight: 15px;
+    margin: 10px 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*--contact--*/
+.contact{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+.contact h2{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    margin-left: 10%;
+
+}
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    outline: none;
+}
